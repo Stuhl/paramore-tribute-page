@@ -42,6 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
       applyTransition([header, main, footer, drawer])
       showDrawer()
     }
+
+    drawer.addEventListener("click", (event) => {
+      if (event.target.tagName === "A") {
+        isOpen = false
+        resetTransition([header, main, footer, drawer])
+        hideDrawer()
+      }
+    })
   })
 
 })
