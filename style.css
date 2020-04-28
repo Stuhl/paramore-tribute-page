@@ -33,6 +33,18 @@ a:visited {
   text-decoration: none;
 }
 
+#home-arrow {
+  color: red;
+  transform: scale(3);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  color: hsla(31, 100%, 45%, 1);
+
+  z-index: 1;
+}
+
 #drawer {
   height: 100%;
   z-index: 1;
