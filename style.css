@@ -41,20 +41,13 @@ a:visited {
   overflow-x: hidden;
 
   background-color: hsla(31, 100%, 45%, 1);
+  padding-top: 20px;
 
   display: grid;
   grid-auto-rows: 70px;
-
   align-items: center;
 }
-#drawer > h2 {
-  padding-left: 20px;
-  text-decoration: underline white;
-
-  margin: 0;
-  padding-top: 10px;
-}
-#drawer > h3 {
+#drawer > a {
   font-size: 2em;
   padding-left: 20px;
   padding-right: 20px;
