@@ -41,6 +41,33 @@ a:visited {
   overflow-x: hidden;
 
   background-color: hsla(31, 100%, 45%, 1);
+
+  display: grid;
+  grid-auto-rows: 50px;
+}
+#drawer > h2 {
+  padding-left: 20px;
+  text-decoration: underline white;
+
+  margin: 0;
+  padding-top: 10px;
+}
+#drawer > h3 {
+  font-size: 2em;
+  padding-left: 20px;
+
+  margin: 0;
+}
+#drawer-social-media {
+  display: grid;
+  grid-auto-flow: column;
+}
+#drawer-social-media > a {
+  display: grid;
+}
+#drawer-social-media > a > i {
+  justify-self: center;
+  align-self: center;
 }
 
 
@@ -64,8 +91,20 @@ a:visited {
   grid-column: 2/3;
   grid-row: 1/2;
 
-  transform: scale(2);
+  display: grid;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+#header-layout > #drawer-button > i {
+  justify-self: end;
+  align-self: center;
+
+  padding-right: 10px;
+
+  transform: scale(3);
+}
+
 
 #logo-and-description > h1 {
   grid-column: 1/2;
