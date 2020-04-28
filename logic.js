@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const drawerButton = document.querySelector("#drawer-button")
   const music = document.querySelector("#music-layout > #content")
   const musicContainer = document.querySelector("#music-layout")
+  const homeArrow = document.querySelector("#home-arrow")
 
   const albumSongs = {
     "0": [
@@ -174,5 +175,22 @@ document.addEventListener("DOMContentLoaded", () => {
     `
   }
   attachEvents()
+
+  function renderArrowIntoView(shouldRender) {
+    if (shouldRender) {
+      homeArrow.style.display = "block"
+    } else {
+      homeArrow.style.display = "none"
+    }
+  }
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+      renderArrowIntoView(true)
+    } else {
+      renderArrowIntoView(false)
+    }
+  })
+
 
 })
