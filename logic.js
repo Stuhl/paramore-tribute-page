@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img.addEventListener("click", () => {
         if (hasItem) {
           musicContainer.removeChild(musicContainer.lastElementChild)
+          hasItem = false
         }
 
         const template = albumTemplate(thisAlbumSongs, name)
