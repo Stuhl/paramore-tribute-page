@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // music element
   function attachEvents() {
     const images = music.getElementsByTagName("img")
+    let hasItem = false
 
     for (let img of images) {
       const keyValue = img.attributes["0"].value
@@ -138,9 +139,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const thisAlbumSongs = albumSongs[keyValue]
 
       img.addEventListener("click", () => {
+        if (hasItem) {
+          musicContainer.removeChild(musicContainer.lastElementChild)
+        }
+
         const template = albumTemplate(thisAlbumSongs, name)
         musicContainer.insertAdjacentHTML("beforeend", template)
         musicContainer.lastElementChild.scrollIntoView()
+        hasItem = true
       })
     }
   }
