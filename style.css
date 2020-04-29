@@ -51,6 +51,9 @@ a:visited {
 
   display: none;
 }
+#home-arrow:active {
+  color: hsla(0, 0%, 90%, 1);
+}
 
 #drawer {
   height: 100%;
@@ -87,6 +90,10 @@ a:visited {
   align-self: center;
 
   transform: scale(1.3);
+}
+
+#drawer > a:active, #drawer-social-media > a:active {
+  color: hsla(0, 0%, 10%, 1);
 }
 
 
@@ -182,6 +189,9 @@ a:visited {
   height: 50%;
   width: 50%;
 }
+#drawer-button:active {
+  color: hsla(35, 100%, 60%, 1);
+}
 
 #nav-layout {
   display: none;
@@ -263,6 +273,17 @@ a:visited {
 }
 
 @media only screen and (min-width: 1200px) {
+  #home-arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transform: scale(4);
+  }
+  #home-arrow:hover {
+    transition-duration: 0.2s;
+    color: hsla(0, 0%, 90%, 1);
+  }
+
   #links > a {
     font-size: calc(1em + 1.2vw);
   }
@@ -270,7 +291,11 @@ a:visited {
     font-size: calc(0.5em + 1vw);
   }
   #nav-layout {
-    grid-template-columns: 2fr 4px 1fr;
+    grid-template-columns: 2fr 3px 1fr;
+  }
+  #links > a:hover, #social-media > a:hover {
+    transition-duration: 0.2s;
+    color: hsla(35, 100%, 60%, 1);
   }
 }
 
