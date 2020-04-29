@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ol = getList(songs)
     return `
     <details open id="album-layout">
-      <summary>${name}</summary>
+      <summary>${name} - Track list</summary>
       ${ol}
     </details>
     `
