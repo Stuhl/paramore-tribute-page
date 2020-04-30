@@ -297,6 +297,13 @@ a:visited {
     transition-duration: 0.2s;
     color: hsla(35, 100%, 60%, 1);
   }
+
+  #links > a {
+    padding-right: 15px;
+  }
+  #social-media > a {
+    padding-left: 15px;
+  }
 }
 
 
@@ -665,5 +672,14 @@ a:visited {
   }
   #music-layout > h4 {
     font-size: calc(1em + 1.5vw);
+  }
+  #album-layout {
+    display: grid;
+  }
+  #album-layout > summary {
+    font-size: 1.7em;
+  }
+  #album-layout > ol > li {
+    font-size: 1.3em;
   }
 }
